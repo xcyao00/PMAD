@@ -8,20 +8,18 @@ PyTorch implementation and pretrained models for AAAI2023 paper, One-for-All: Pr
 
 ## Download Pretrained Weights and Models
 
-We provide four weights trained on MVTecAD dataset. The models were trained with 224x224 resolution.
 
-- `ViT-base-16`: #layer=12; hidden=768; FFN factor=4x; #head=12; patch=16x16 (#parameters: 86M)
-- `ViT-large-16`: #layer=24; hidden=1024; FFN factor=4x; #head=16; patch=16x16 (#parameters: 304M)
-
-Download checkpoints that are **self-supervised pretrained** on ImageNet-22k and **then intermediate fine-tuned** on MVTecAD dataset:
-- ViT-base-16: [beit_base_patch16_224_pt22k_ft22k](https://conversationhub.blob.core.windows.net/beit-share-public/beit/beit_base_patch16_224_pt22k_ft22k.pth)
-- ViT-large-16: [beit_large_patch16_224_pt22k_ft22k](https://conversationhub.blob.core.windows.net/beit-share-public/beit/beit_large_patch16_224_pt22k_ft22k.pth)
+Download checkpoints that are **self-supervised pretrained** on ImageNet-22k and **then used for fine-tuning** on MVTecAD dataset:
+- ViT-base-16: [beit_base_patch16_224_pt22k](https://conversationhub.blob.core.windows.net/beit-share-public/beit/beit_base_patch16_224_pt22k.pth)
+- ViT-large-16: [beit_large_patch16_224_pt22k](https://conversationhub.blob.core.windows.net/beit-share-public/beit/beit_large_patch16_224_pt22k.pth)
 
 Download pretrained visual tokenizer(discrite VAE) from: [encoder](https://cdn.openai.com/dall-e/encoder.pkl), [decoder](https://cdn.openai.com/dall-e/encoder.pkl), and put them to the directory ``weights/tokenizer``.
 
-Download offline generated prototype feature from: [there](https://cdn.openai.com/dall-e/encoder.pkl), and put it to the directory ``weights/prototypes``.
+Or download pretrained ViT visual tokenizer from: [vit_tokenizer](https://pan.baidu.com/s/15ySQAeBLhr3HYe_rECVqkQ) (extract code: hxcc), and put them to the directory ``weights/tokenizer``.
 
-Download pretrained protoflow from: [there](https://cdn.openai.com/dall-e/encoder.pkl), and put it to the directory ``weights/protoflow``.
+Download offline generated prototype feature from: [there](https://pan.baidu.com/s/1ewBLEp2gKfGU0kVGRupifw) (extract code: hxcc), and put it to the directory ``weights/prototypes``.
+
+Download pretrained protoflow from: [there](https://pan.baidu.com/s/1tDg_lcAyRQfQikHOKt_h2w) (extract code: hxcc), and put it to the directory ``weights/protoflow``.
 
 
 ## Setup
@@ -35,7 +33,7 @@ Download MVTecAD dataset from [there](https://www.mvtec.com/de/unternehmen/forsc
 ```
 python setup_train_dataset.py --data_path /path/to/dataset
 ```
-This script will create a ImageNet format dataset for training at the ``data/Mvtec-ImageNet`` directory. Then please download [foreground masks](https://cdn.openai.com/dall-e/encoder.pkl), and put it to the directory ``data/Mvtec-ImageNet/fg_mask``.
+This script will create a ImageNet format dataset for training at the ``data/Mvtec-ImageNet`` directory. Then please download [foreground masks](https://pan.baidu.com/s/1KrTAfe3QSvJuFPfppNAY3g) (extract code: hxcc), and put it to the directory ``data/Mvtec-ImageNet/fg_mask``.
 
 ## Training
 
@@ -54,7 +52,7 @@ Run code for testing MVTecAD dataset.
 bash scripts/test_multi_class.sh  // testing for multi-class setting
 bash scripts/test_multi_class.sh  // testing for multi-class setting
 ```
-You can download trained ``ViT-base-16`` models for multi-class setting: [multi-classes-model](output_dir/vit_base_16_checkpoint_962_955.pth), the trained models are provided in [Download Pretrained Weights and Models](#download-pretrained-weights-and-models) section. You can download trained ``ViT-base-16`` model for cross-class setting from: [objects-to-textures](output_dir/vit_base_16_obj_to_texture/checkpoint_976_931.pth) and [textures-to-objects](output_dir/vit_base_16_texture_to_obj/checkpoint_844_894.pth).
+You can download trained ``ViT-base-16`` models for multi-class setting: [multi-classes-model](https://pan.baidu.com/s/1zfPSFzLp6-QLb41nFk5gYA), the trained models are provided in [Download Pretrained Weights and Models](#download-pretrained-weights-and-models) section. You can download trained ``ViT-base-16`` model for cross-class setting from: [objects-to-textures](output_dir/vit_base_16_obj_to_texture/checkpoint_976_931.pth) and [textures-to-objects](output_dir/vit_base_16_texture_to_obj/checkpoint_844_894.pth).
 
 We summarize the validation results as follows.
 
