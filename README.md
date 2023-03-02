@@ -52,7 +52,7 @@ Run code for testing MVTecAD dataset.
 bash scripts/test_multi_class.sh  // testing for multi-class setting
 bash scripts/test_multi_class.sh  // testing for multi-class setting
 ```
-You can download trained ``ViT-base-16`` models for multi-class setting: [multi-classes-model](https://pan.baidu.com/s/1zfPSFzLp6-QLb41nFk5gYA), the trained models are provided in [Download Pretrained Weights and Models](#download-pretrained-weights-and-models) section. You can download trained ``ViT-base-16`` model for cross-class setting from: [objects-to-textures](https://pan.baidu.com/s/12uIIv-_YSzthvgCLwjCiNQ) and [textures-to-objects](output_dir/vit_base_16_texture_to_obj/checkpoint_844_894.pth).
+You can download trained ``ViT-base-16`` models for multi-class setting: [multi-classes-model](https://pan.baidu.com/s/1zfPSFzLp6-QLb41nFk5gYA), the trained models are provided in [Download Pretrained Weights and Models](#download-pretrained-weights-and-models) section. You can download trained ``ViT-base-16`` model for cross-class setting from: [objects-to-textures](https://pan.baidu.com/s/12uIIv-_YSzthvgCLwjCiNQ) and [textures-to-objects](https://pan.baidu.com/s/1quth2urv-4rMmCdvP8GMFA).
 
 We summarize the validation results as follows.
 
