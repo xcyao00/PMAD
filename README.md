@@ -1,5 +1,5 @@
-# [One-for-All: Proposal Masked Cross-Class Anomaly Detection](https://arxiv.org/abs/2106.08254)
-
+# [One-for-All: Proposal Masked Cross-Class Anomaly Detection]
+<!-- (https://arxiv.org/abs/2106.08254) -->
 PyTorch implementation and pretrained models for AAAI2023 paper, One-for-All: Proposal Masked Cross-Class Anomaly Detection.
 
 
