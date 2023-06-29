@@ -1,4 +1,4 @@
-# [One-for-All: Proposal Masked Cross-Class Anomaly Detection]
+# [One-for-All: Proposal Masked Cross-Class Anomaly Detection](https://doi.org/10.1609/aaai.v37i4.25604)
 <!-- (https://arxiv.org/abs/2106.08254) -->
 PyTorch implementation and pretrained models for AAAI2023 paper, One-for-All: Proposal Masked Cross-Class Anomaly Detection.
 
@@ -98,9 +98,9 @@ If you find this repository useful, please consider citing our work:
 @article{PMAD,
       title={One-for-All: Proposal Masked Cross-Class Anomaly Detection}, 
       author={Xincheng Yao and Chongyang Zhang and Ruoqi Li and Jun Sun and Zhenyu Liu},
-      year={2022},
-      eprint={2206.08254},
-      archivePrefix={arXiv},
+      year={2023},
+      conference={Proceedings of the AAAI Conference on Artificial Intelligence, 37(4), 4792-4800.},
+      doi={https://doi.org/10.1609/aaai.v37i4.25604},
       primaryClass={cs.CV}
 }
 ```
