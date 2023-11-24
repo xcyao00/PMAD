@@ -15,11 +15,11 @@ Download checkpoints that are **self-supervised pretrained** on ImageNet-22k and
 
 Download pretrained visual tokenizer(discrite VAE) from: [encoder](https://cdn.openai.com/dall-e/encoder.pkl), [decoder](https://cdn.openai.com/dall-e/encoder.pkl), and put them to the directory ``weights/tokenizer``.
 
-Or download pretrained ViT visual tokenizer from: [vit_tokenizer](https://pan.baidu.com/s/15ySQAeBLhr3HYe_rECVqkQ) (extract code: hxcc), and put them to the directory ``weights/tokenizer``.
+Or download pretrained ViT visual tokenizer from: [vit_tokenizer](https://huggingface.co/xcyao00/PMAD/blob/main/vit_tokenizer.pth), and put them to the directory ``weights/tokenizer``.
 
-Download offline generated prototype feature from: [there](https://pan.baidu.com/s/1ewBLEp2gKfGU0kVGRupifw) (extract code: hxcc), and put it to the directory ``weights/prototypes``.
+Download offline generated prototype feature from: [there](https://huggingface.co/xcyao00/PMAD/tree/main/prototypes), and put it to the directory ``weights/prototypes``.
 
-Download pretrained protoflow from: [there](https://pan.baidu.com/s/1tDg_lcAyRQfQikHOKt_h2w) (extract code: hxcc), and put it to the directory ``weights/protoflow``.
+Download pretrained protoflow from: [there](https://huggingface.co/xcyao00/PMAD/tree/main/protoflow), and put it to the directory ``weights/protoflow``.
 
 
 ## Setup
@@ -33,7 +33,7 @@ Download MVTecAD dataset from [there](https://www.mvtec.com/de/unternehmen/forsc
 ```
 python setup_train_dataset.py --data_path /path/to/dataset
 ```
-This script will create a ImageNet format dataset for training at the ``data/Mvtec-ImageNet`` directory. Then please download [foreground masks](https://pan.baidu.com/s/1KrTAfe3QSvJuFPfppNAY3g) (extract code: hxcc), and put it to the directory ``data/Mvtec-ImageNet/fg_mask``.
+This script will create a ImageNet format dataset for training at the ``data/Mvtec-ImageNet`` directory. Then please download [foreground masks](https://huggingface.co/xcyao00/PMAD/blob/main/fg_mask.zip), and put it to the directory ``data/Mvtec-ImageNet/fg_mask``.
 
 ## Training
 
@@ -52,7 +52,7 @@ Run code for testing MVTecAD dataset.
 bash scripts/test_multi_class.sh  // testing for multi-class setting
 bash scripts/test_multi_class.sh  // testing for multi-class setting
 ```
-You can download trained ``ViT-base-16`` models for multi-class setting: [multi-classes-model](https://pan.baidu.com/s/1zfPSFzLp6-QLb41nFk5gYA), the trained models are provided in [Download Pretrained Weights and Models](#download-pretrained-weights-and-models) section. You can download trained ``ViT-base-16`` model for cross-class setting from: [objects-to-textures](https://pan.baidu.com/s/12uIIv-_YSzthvgCLwjCiNQ) and [textures-to-objects](https://pan.baidu.com/s/1quth2urv-4rMmCdvP8GMFA).
+You can download trained ``ViT-base-16`` models for multi-class setting: [multi-classes-model](https://huggingface.co/xcyao00/PMAD/blob/main/vit_base_16_checkpoint_962_955.pth), the trained models are provided in [Download Pretrained Weights and Models](#download-pretrained-weights-and-models) section. You can download trained ``ViT-base-16`` model for cross-class setting from: [objects-to-textures](https://huggingface.co/xcyao00/PMAD/blob/main/checkpoint_976_931.pth) and [textures-to-objects](https://huggingface.co/xcyao00/PMAD/blob/main/checkpoint_844_894.pth).
 
 We summarize the validation results as follows.
 
